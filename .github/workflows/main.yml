@@ -9,3 +9,6 @@ jobs:
       - uses: ./action-a
         with:
           MY_NAME: "Mona"
+    name: Send Email Action (Node)
+    steps:
+      - uses: wadeww/send-email-action@v1:  
