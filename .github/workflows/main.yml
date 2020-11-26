@@ -9,7 +9,7 @@ jobs:
       - uses: ./action-a
         with:
           MY_NAME: "Mona" 
- continue:  
+  continue:  
     name: Send mail
     uses: dawidd6/action-send-mail@v2
     with:
