@@ -11,6 +11,7 @@ jobs:
           MY_NAME: "Mona" 
   continue:  
     name: Send mail
+    runs-on: ubuntu-latest
     steps:
       - uses: dawidd6/action-send-mail@v2
         with:
