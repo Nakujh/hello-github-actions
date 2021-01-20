@@ -2,6 +2,14 @@
 @domain/root:
   - ./*
   
+# Add 'New-Line' label to any root file changes
+New-Line:
+  - any: ['LineAppender/**/*', '!LineAppender/Build/*']
+  
+# Add 'New-Line' label to any root file changes
+Build-Modified:
+  - any: ['LineAppender/Build/*']
+  
 # Add '@domain/core' label to any change within the 'core' package
 # @domain/core:
 #  - package/core/*
