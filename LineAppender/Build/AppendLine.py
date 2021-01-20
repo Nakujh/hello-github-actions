@@ -17,4 +17,4 @@ def append_new_line(sFileName, sTextToAppend):
     # Append text at the end of file
     FileObject.write(f'// {sTextToAppend} ({get_current_date_time()})')
     
-append_new_line('../ThreadExample/ThreadProject.dpr', 'Runner Machine note:  Release: ')
+append_new_line('.\ThreadExample\ThreadProject.dpr', 'Runner Machine note:  Release: ')
