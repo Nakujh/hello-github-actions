@@ -25,8 +25,8 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Append Line
       run: |
-        cd LineAppender/Build
-        python AppendLine.py
+        cd LineAppender
+        python Build/AppendLine.py
     - name: update file and push to remote
       run: |
         git config --global user.name "github-actions[bot]"
