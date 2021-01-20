@@ -1,5 +1,5 @@
 name: Workflow for my Hello World file
-on: [workflow_dispatch]
+on: [workflow_dispatch,push]
 jobs:
   build:
     name: Hello world 
