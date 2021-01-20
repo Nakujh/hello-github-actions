@@ -20,3 +20,4 @@ def append_new_line(sFileName, sTextToAppend):
     FileObject.write(f'// {sTextToAppend} ({get_current_date_time()})')
     
 append_new_line(os.path.join(os.getcwd(), 'ThreadExample/ThreadProject.dpr'), 'Runner Machine note:  Release: ')
+# Comment added
