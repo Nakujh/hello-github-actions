@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 def get_current_date_time():
@@ -7,6 +8,7 @@ def get_current_date_time():
 def append_new_line(sFileName, sTextToAppend):
     """Append given text as a new line at the end of file"""
     # Open the file in append & read mode ('a+')
+    print(os.getcwd())
     FileObject = open(sFileName, "a+")
     # Move read cursor to the start of file.
     FileObject.seek(0)
