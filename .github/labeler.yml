@@ -1,6 +1,6 @@
 # Add '@domain/core' label to any root file changes
-@domain/root:
-  - ./*
+#@domain/root:
+#  - ./*
   
 # Add 'New-Line' label to any root file changes
 New-Line:
