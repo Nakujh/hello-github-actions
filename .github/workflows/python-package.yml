@@ -31,9 +31,9 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
+    - name: Append Line
       env: 
         API_USER: ${{secrets.API_USER}} 
-    - name: Append Line
       run: |
         cd LineAppender
         python Build/AppendLine.py
