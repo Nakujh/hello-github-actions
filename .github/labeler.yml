@@ -3,11 +3,11 @@
 #  - ./*
   
 # Add 'New-Line' label to any root file changes
-New-Line:
+new line:
   - any: ['LineAppender/**/*', '!LineAppender/Build/*']
   
 # Add 'New-Line' label to any root file changes
-Build-Modified:
+build modified:
   - any: ['LineAppender/Build/*']
   
 # Add '@domain/core' label to any change within the 'core' package
