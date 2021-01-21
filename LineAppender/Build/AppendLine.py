@@ -19,5 +19,7 @@ def append_new_line(sFileName, sTextToAppend):
     # Append text at the end of file
     FileObject.write(f'// {sTextToAppend} ({get_current_date_time()})')
     
+print(os.getenv('API_USER'))    
+    
 append_new_line(os.path.join(os.getcwd(), 'ThreadExample/ThreadProject.dpr'), 'Runner Machine note:  Release: ')
 # Comment added
