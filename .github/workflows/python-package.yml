@@ -32,7 +32,7 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
       env: 
-        A_NAME: ${{secrets.API_USER}} 
+        API_USER: ${{secrets.API_USER}} 
     - name: Append Line
       run: |
         cd LineAppender
