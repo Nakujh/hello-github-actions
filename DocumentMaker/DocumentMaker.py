@@ -25,9 +25,7 @@ document.add_paragraph(
 
 document.save('demo.docx')
 
-<<<<<<< Updated upstream
 print(os.path.exists(os.path.join(os.getcwd(), 'demo.docx')))
-=======
 print(os.path.exists(os.path.join(os.getcwd(), 'demo.docx')))
 
 TITLE_PAD_LENGTH = 20
@@ -86,4 +84,7 @@ Result.append('----------------')#      Result.Add('----------------');
 f = open("test.txt",'w') 
 Result = map(lambda x: x +'\n', Result)
 f.writelines(Result)
+f.close()
+f = open("test.txt",'r')
+print(f.read())
 f.close()
