@@ -1,5 +1,5 @@
 name: A workflow for my Hello World file
-on: [workflow_dispatch]
+on: [workflow_dispatch,push,pull_request]
 jobs:
   build:
     name: Hello world action
@@ -8,7 +8,8 @@ jobs:
       - uses: actions/checkout@v1
       - uses: ./action-a
         with:
-          MY_NAME: "Mona" 
+          MY_NAME: $GITHUB_ACTOR
+          #"Nakujh" 
   continue:  
     name: Send mail
     runs-on: ubuntu-latest
@@ -24,8 +25,9 @@ jobs:
              body: Build job of ${{github.repository}} completed successfully!
              # Read file contents as body:
              # body: file://README.md
-             to: nj185051@ncr.com
-             from: jhanarendra96@gmail.com
+             to: jhanarendra96@gmail.com,nj185051@ncr.com
+             #nj185051@ncr.com
+             from: Runner
              # Optional content type (defaults to text/plain):
              content_type: text/html
              # Optional attachments:
