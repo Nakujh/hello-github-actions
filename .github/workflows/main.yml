@@ -26,7 +26,7 @@ jobs:
              # body: file://README.md
              to: jhanarendra96@gmail.com,nj185051@ncr.com
              #nj185051@ncr.com
-             from: nj185051@ncr.com
+             from: Runner
              # Optional content type (defaults to text/plain):
              content_type: text/html
              # Optional attachments:
