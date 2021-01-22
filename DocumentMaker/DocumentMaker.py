@@ -26,7 +26,6 @@ document.add_paragraph(
 document.save('demo.docx')
 
 print(os.path.exists(os.path.join(os.getcwd(), 'demo.docx')))
-print(os.path.exists(os.path.join(os.getcwd(), 'demo.docx')))
 
 TITLE_PAD_LENGTH = 20
 HOT_FIX_DESCRRIPTION = ' (Hot Fix)'
