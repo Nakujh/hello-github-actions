@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: dawidd6/action-send-mail@v2
         with:
-             server_address: smtp-mail.outlook.com
+             server_address: smtp.office365.com
              #smtp.gmail.com
              server_port: 587
              #465
