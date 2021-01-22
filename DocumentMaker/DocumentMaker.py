@@ -1,8 +1,13 @@
 from docx import Document
+from datetime import datetime
 import os
 #from docx.shared import Inches
 
 #def PadString(sTarget):
+
+def get_current_date_time():
+    dtCurrent = datetime.now()
+    return dtCurrent.strftime('%d/%m/%Y %H:%M:%S')
 
 document = Document()
 
@@ -47,7 +52,7 @@ Result.append('---------------------------------')#Result.Add(' ----------------
 #//      Result.Add('');
 Result.append('')#      Result.Add('');
 Result.append('Patch Number'.ljust(TITLE_PAD_LENGTH))#      Result.Add(PadChar('Patch Number', TITLE_PAD_LENGTH, ' ')   +  FVersionNum);
-Result.append('Date Packed'.ljust(TITLE_PAD_LENGTH))#      Result.Add(PadChar('Date Packed', TITLE_PAD_LENGTH, ' ') +  GetStringFromIntDate(FReleaseDate) + ' ' + GetStringFromIntTime(FReleaseTime));
+Result.append(f"{'Date Packed'.ljust(TITLE_PAD_LENGTH)} {get_current_date_time()}")#      Result.Add(PadChar('Date Packed', TITLE_PAD_LENGTH, ' ') +  GetStringFromIntDate(FReleaseDate) + ' ' + GetStringFromIntTime(FReleaseTime));
 Result.append(f"{'Developer Name'.ljust(TITLE_PAD_LENGTH)} {ReleaseUser}")#      Result.Add(PadChar('Developer Name', TITLE_PAD_LENGTH, ' ') +  FReleaseUser);
 Result.append('Project'.ljust(TITLE_PAD_LENGTH))#      Result.Add(PadChar('Project', TITLE_PAD_LENGTH, ' ')  +  Trim(aProjectsName));
 Result.append('WDM Number'.ljust(TITLE_PAD_LENGTH))#      Result.Add(PadChar('WDM Number', TITLE_PAD_LENGTH, ' ')  +  FVersionNum);
