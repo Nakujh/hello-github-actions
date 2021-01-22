@@ -2,12 +2,8 @@ from docx import Document
 import os
 #from docx.shared import Inches
 
-<<<<<<< Updated upstream
-=======
 #def PadString(sTarget):
-    
 
->>>>>>> Stashed changes
 document = Document()
 
 document.add_heading('Document Title', 0)
@@ -91,4 +87,3 @@ f = open("test.txt",'w')
 Result = map(lambda x: x +'\n', Result)
 f.writelines(Result)
 f.close()
->>>>>>> Stashed changes
