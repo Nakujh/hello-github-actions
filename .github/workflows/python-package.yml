@@ -38,7 +38,7 @@ jobs:
     - name: Append Line
       env: 
         API_USER: ${{secrets.API_USER}} 
-        RELEASE_USER: ${{GITHUB_ACTOR}}
+        RELEASE_USER: ${{ github.actor }}
       run: |
         cd LineAppender
         python Build/AppendLine.py
